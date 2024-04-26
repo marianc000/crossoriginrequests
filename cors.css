@@ -65,3 +65,4 @@ button {
 tr:empty:nth-last-child(n+2) {
     border: 1px solid var(--borderColor);;
 }
+thead>tr>td:nth-child(3) {width: 8em;}
