@@ -3,31 +3,19 @@
 <head>
   <link rel="icon" type="image/x-icon" href="off.png">
   <link href="cors.css" rel="stylesheet">
-  <script type="module" src="cors.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="content">
-      <div><button type="button" id="fetchBtn">Fetch again</button></div>
-      <div id="requestDiv">
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <td>Credentials</td>
-                <td>Method</td>
-                <td>Time requested</td>
-                <td>Session ID</td>
-                <td>Data from request</td>
-              </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-          </table>
-        </div>
-
+      <h1>A page for testing cross origin requests blocked by Cross-Origin Resource Sharing (CORS) or Content Security
+        Policy (CSP)</h1>
+      <div class="links">
+        <div><a href="cors.html">Cross origin requests without CSP</a> </div>
+        <div><a href="corsCsp.html">Cross origin requests in a page with CSP</a> </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

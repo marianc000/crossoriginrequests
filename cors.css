@@ -1,7 +1,12 @@
+:root {
+    --color: darkslategrey;
+    --borderColor:silver;
+  }
+
 * {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-        color: darkslategrey;
+        color: var(--color);
 }
 
 .container {
@@ -15,18 +20,8 @@
 body {
     margin: 0;
 }
-input[type="checkbox"] {
-    width: 1em;
-    height: 1em;
-    margin: 0;
-    vertical-align: text-top;
-}
-
-span {
-    font-style: italic;
-    background-color: gainsboro;
-}
-
+ 
+ 
 .content {
     text-align: center;
 }
@@ -38,7 +33,7 @@ span {
 
 thead td {
     font-weight: bold;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--borderColor);;
 }
  
 
@@ -48,4 +43,25 @@ td {
 
 table {
     border-collapse: collapse;
+}
+
+.links {
+    text-align: left;
+    display: inline-block;
+}
+
+.links>div {
+    margin: 0.5em 0;
+}
+
+button {
+    margin: 0 1em 0 0;
+}
+
+.controls {
+    text-align: left;
+}
+
+tr:empty:nth-last-child(n+2) {
+    border: 1px solid var(--borderColor);;
 }

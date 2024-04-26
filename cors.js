@@ -1,3 +1,6 @@
+await fetch('body.html').then(r=>r.text()).then(txt=>document.body.innerHTML=txt);
+
+
 const URL = 'https://cors-server-for-extension.ue.r.appspot.com/data/32';
 
 function send(method, credentials ) {
@@ -37,18 +40,20 @@ function request(credentials) {
         .then(() => sendAndDisplay('post', credentials))
         .then(() => sendAndDisplay('put', credentials))
         .then(() => sendAndDisplay('delete', credentials))
-        .then(() => sendAndDisplay('PATCH', credentials));
+        .then(() => sendAndDisplay('PATCH', credentials))
+        .then(()=>tbody.insertAdjacentHTML('beforeend', `<tr></tr>`));
 }
 
 function tryRequests() {
     tbody.replaceChildren();
     request()
     .then(() => request('include'))
-    .then(() => request('omit'))
-    .then(() => request('same-origin'));
+ //  .then(() => request('omit'))
+ // .then(() => request('same-origin'));
 }
 
 tryRequests();
 
 fetchBtn.addEventListener('click',tryRequests);
+backBtn.addEventListener('click',e=>location.assign("/"));
 
