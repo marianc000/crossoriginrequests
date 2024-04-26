@@ -1,12 +1,12 @@
 :root {
     --color: darkslategrey;
-    --borderColor:silver;
-  }
+    --borderColor: silver;
+}
 
 * {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-        color: var(--color);
+    color: var(--color);
 }
 
 .container {
@@ -20,8 +20,8 @@
 body {
     margin: 0;
 }
- 
- 
+
+
 .content {
     text-align: center;
 }
@@ -29,13 +29,14 @@ body {
 .content>div {
     margin: 1em 0;
 }
- 
+
 
 thead td {
     font-weight: bold;
-    border-bottom: 1px solid var(--borderColor);;
+    border-bottom: 1px solid var(--borderColor);
+    ;
 }
- 
+
 
 td {
     padding: 0 0.5em;
@@ -63,6 +64,14 @@ button {
 }
 
 tr:empty:nth-last-child(n+2) {
-    border: 1px solid var(--borderColor);;
+    border: 1px solid var(--borderColor);
+    ;
 }
-thead>tr>td:nth-child(3) {width: 8em;}
+
+thead>tr>td:nth-child(3) {
+    width: 8em;
+}
+
+tr:has(td[colspan])>* {
+    color: crimson;
+}

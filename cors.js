@@ -25,7 +25,7 @@ function send(method, credentials ) {
 
 function toRow(o) {
     if (o.error) return `<tr><td>${o.credentials||''}</td><td colspan=4>${o.error}</td></tr>`
-    return `<tr><td>${o.credentials||''}</td><td>${o.method}</td><td>${o.time}</td><td>${o.sessionId}</td><td>${o.data}</td></tr>`;
+    return `<tr><td>${o.credentials||''}</td><td>${o.method}</td><td>${o.time}</td><td>${o.sessionId}</td><td>${o.data??''}</td></tr>`;
 }
 
 function sendAndDisplay(method, credentials) {
