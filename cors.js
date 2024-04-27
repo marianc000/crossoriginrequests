@@ -30,7 +30,7 @@ function toRow(o) {
 
 function sendAndDisplay(method, credentials) {
     return send(method, credentials).then(o => {
-        console.log(o);
+      //  console.log(o);
         tbody.insertAdjacentHTML('beforeend', toRow(o));
     });
 }
