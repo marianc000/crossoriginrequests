@@ -60,7 +60,7 @@ button {
 }
 
 .controls {
-    text-align: left;
+    /* text-align: left; */
 }
 
 tr:empty:nth-last-child(n+2) {
@@ -74,4 +74,10 @@ thead>tr>td:nth-child(3) {
 
 tr:has(td[colspan])>* {
     color: crimson;
+}
+
+.note>a {
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.5em;
 }
