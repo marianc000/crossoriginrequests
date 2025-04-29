@@ -1,5 +1,5 @@
 :root {
-    --color: darkslategrey;
+    --color: #1a1a1a;
     --borderColor: silver;
 }
 
@@ -58,11 +58,7 @@ table {
 button {
     margin: 0 1em 0 0;
 }
-
-.controls {
-    /* text-align: left; */
-}
-
+ 
 tr:empty:nth-last-child(n+2) {
     border: 1px solid var(--borderColor);
     ;
@@ -80,4 +76,13 @@ tr:has(td[colspan])>* {
     font-weight: bold;
     color: orangered;
     font-size: 1.5em;
+}
+
+.content .contact {
+    margin-top: 2em;
+}
+
+.contact a {
+ 
+    color: mediumblue;
 }
