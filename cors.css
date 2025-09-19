@@ -86,3 +86,8 @@ tr:has(td[colspan])>* {
  
     color: mediumblue;
 }
+
+.video {
+    margin-left: 2em;
+    text-align: center;
+}

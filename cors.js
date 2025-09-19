@@ -1,5 +1,7 @@
-await fetch('body.html').then(r=>r.text()).then(txt=>document.body.innerHTML=txt);
+import { insertNiceVideo } from "./video.js";
 
+await fetch('body.html').then(r=>r.text()).then(txt=>document.body.innerHTML=txt);
+insertNiceVideo();
 
 const URL = 'https://cors-server-for-extension.ue.r.appspot.com/data/32';
 
