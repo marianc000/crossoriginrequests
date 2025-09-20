@@ -58,7 +58,7 @@ table {
 button {
     margin: 0 1em 0 0;
 }
- 
+
 tr:empty:nth-last-child(n+2) {
     border: 1px solid var(--borderColor);
     ;
@@ -83,11 +83,15 @@ tr:has(td[colspan])>* {
 }
 
 .contact a {
- 
+
     color: mediumblue;
 }
 
 .video {
-    margin-left: 2em;
+    /* margin-left: 2em; */
     text-align: center;
+}
+
+.video>div:empty~p {
+    display: none;
 }
